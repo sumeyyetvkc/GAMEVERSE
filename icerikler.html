@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090817">
+  <meta name="description" content="GAMEVERSE oyun kataloğunda sekiz farklı oyun evrenini keşfet.">
+  <title>Oyun Kataloğu | GAMEVERSE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Ana içeriğe geç</a>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="GAMEVERSE ana sayfa">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-word">GAME<span>VERSE</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Ana gezinme">
+        <a class="nav-link" href="index.html">Ana Sayfa</a>
+        <a class="nav-link" href="icerikler.html" aria-current="page">Oyunlar</a>
+        <a class="nav-link" href="hakkinda.html">Hakkında</a>
+      </nav>
+      <details class="mobile-menu">
+        <summary class="mobile-menu-toggle"><span class="menu-lines" aria-hidden="true"><i></i><i></i></span>Menü</summary>
+        <nav class="mobile-menu-panel" aria-label="Mobil gezinme">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="icerikler.html" aria-current="page">Oyunlar</a>
+          <a href="hakkinda.html">Hakkında</a>
+        </nav>
+      </details>
+      <a class="button button--secondary button--small" href="#oyunlar">Kataloğu keşfet <span aria-hidden="true">↘</span></a>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="catalog-intro container">
+      <span class="eyebrow">Dijital oyun galerisi</span>
+      <h1 class="page-title">GAME <span class="gradient-text">LIBRARY</span></h1>
+      <p class="lead">Açık dünyalardan rekabetçi arenalara uzanan seçkide, her oyunun kendine özgü hikâyesini ve dünyasını keşfet.</p>
+    </section>
+
+    <section class="section container" id="oyunlar" aria-label="Oyun kataloğu">
+      <div class="search-panel" role="search" aria-label="Oyun kataloğunda ara">
+        <div>
+          <label class="eyebrow" for="game-search">Oyunlarda ara</label>
+          <div class="search-field-wrap">
+            <span class="search-icon" aria-hidden="true"></span>
+            <input class="search-input" id="game-search" type="search" placeholder="Oyun başlığını yaz..." autocomplete="off">
+          </div>
+        </div>
+        <button class="button button--secondary" id="clear-search" type="button">Temizle <span aria-hidden="true">×</span></button>
+      </div>
+      <div class="search-status">
+        <p class="results-count" id="results-count" aria-live="polite"><strong id="visible-count">8</strong> oyun listeleniyor</p>
+        <span class="tag tag--accent">Koleksiyon / 08</span>
+      </div>
+      <p class="empty-state" id="empty-state" role="status" aria-live="polite" hidden>Bu başlıkla eşleşen bir oyun bulunamadı. Farklı bir oyun adı deneyebilirsin.</p>
+
+      <div class="game-grid library-grid" id="game-grid">
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--minecraft"><img class="game-art-image" src="images/games/minecraft.jpeg" alt="Minecraft oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Sandbox</span><span class="art-index">01 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">Minecraft</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Açık dünya / sandbox</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2011</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>Mojang Studios</dd></div>
+            </dl>
+            <p class="game-description">Kaynak topla, keşfe çık ve hayalindeki yapıları blok blok kur. Her dünya kendi maceran için boş bir tuval.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Redstone ile çalışan devreler ve mantık düzenekleri kurabilirsin.</span></p>
+          </div>
+        </article>
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--god-of-war"><img class="game-art-image" src="images/games/god%20of%20war.jpeg" alt="God of War oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Aksiyon-macera</span><span class="art-index">02 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">God of War</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Aksiyon-macera</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2018</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>Santa Monica Studio</dd></div>
+            </dl>
+            <p class="game-description">Kratos ve Atreus, İskandinav mitolojisinin sert diyarlarında tehlikelerle yüzleşirken aralarındaki bağı da keşfeder.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Leviathan Baltası fırlatıldıktan sonra Kratos'un eline geri çağrılabilir.</span></p>
+          </div>
+        </article>
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--last-of-us"><img class="game-art-image" src="images/games/the%20last%20of%20us.jpeg" alt="The Last of Us oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Aksiyon-macera</span><span class="art-index">03 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">The Last of Us</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Aksiyon-macera / hayatta kalma</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2013</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>Naughty Dog</dd></div>
+            </dl>
+            <p class="game-description">Enfekte yaratıkların ve güvensiz insanların sardığı bir dünyada Joel ile Ellie'nin yolculuğunu takip et.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Enfekte tasarımlarında Cordyceps mantarından esinlenilmiştir.</span></p>
+          </div>
+        </article>
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--gta"><img class="game-art-image" src="images/games/gta%20v.jpeg" alt="Grand Theft Auto V oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Açık dünya / aksiyon</span><span class="art-index">04 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">Grand Theft Auto V</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Açık dünya / aksiyon-macera</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2013</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>Rockstar North</dd></div>
+            </dl>
+            <p class="game-description">Los Santos'ta Michael, Franklin ve Trevor'ın kesişen yaşamları; suç, fırsat ve şehir kaosu etrafında şekillenir.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Hikâye boyunca üç ana karakter arasında geçiş yapılabilir.</span></p>
+          </div>
+        </article>
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--rdr2"><img class="game-art-image" src="images/games/red%20dead%20redemption%202.jpeg" alt="Red Dead Redemption 2 oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Açık dünya / macera</span><span class="art-index">05 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">Red Dead Redemption 2</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Açık dünya / aksiyon-macera</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2018</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>Rockstar Studios</dd></div>
+            </dl>
+            <p class="game-description">Arthur Morgan ve Van der Linde çetesiyle, değişen Vahşi Batı'da sadakat ve hayatta kalma arasında bir yol seç.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Çetenin kampı, üyelerin hikâye boyunca bir arada yaşadığı merkezdir.</span></p>
+          </div>
+        </article>
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--forza"><img class="game-art-image" src="images/games/forza%20horizon%205.jpeg" alt="Forza Horizon 5 oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Yarış</span><span class="art-index">06 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">Forza Horizon 5</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Açık dünya yarış</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2021</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>Playground Games</dd></div>
+            </dl>
+            <p class="game-description">Meksika'dan esinlenen geniş haritada yarış, keşif ve Horizon Festival'in renkli etkinlikleri bir araya gelir.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Farklı biyomlar; orman, çöl, sahil ve volkan manzaralarını aynı haritada buluşturur.</span></p>
+          </div>
+        </article>
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--witcher"><img class="game-art-image" src="images/games/the%20witcher%203.jpeg" alt="The Witcher 3 oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Aksiyon RPG</span><span class="art-index">07 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">The Witcher 3</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Açık dünya / aksiyon RPG</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2015</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>CD Projekt Red</dd></div>
+            </dl>
+            <p class="game-description">Canavar avcısı Geralt olarak savaşın, siyasetin ve kadim kehanetlerin şekillendirdiği Kıta'da iz sür.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Gwent, ana maceradan ayrı oynanabilen bir kart oyunudur.</span></p>
+          </div>
+        </article>
+        <article class="game-card library-card" data-game-card>
+          <div class="game-art has-image art--csgo"><img class="game-art-image" src="images/games/counter%20strike.jpeg" alt="Counter-Strike oyun görseli" loading="lazy" decoding="async"><span class="tag tag--accent">Taktiksel FPS</span><span class="art-index">08 / 08</span></div>
+          <div class="game-card-content library-card-content">
+            <h2 class="game-card-title">Counter-Strike: Global Offensive (CS:GO)</h2>
+            <dl class="game-specs">
+              <div><dt>Türü</dt><dd>Çok oyunculu taktiksel FPS</dd></div>
+              <div><dt>Çıkış yılı</dt><dd>2012</dd></div>
+              <div class="game-spec--wide"><dt>Geliştirici</dt><dd>Valve · Hidden Path Entertainment</dd></div>
+            </dl>
+            <p class="game-description">Teröristler ve anti-teröristler arasındaki turlu mücadelede takım koordinasyonu ve isabetli kararlar öne çıkar.</p>
+            <p class="game-fact"><strong>Öne çıkan</strong><span>Her turun başındaki satın alma kararları takımın sonraki hamlelerini etkiler.</span></p>
+            <p class="game-series-note"><strong>Seri notu:</strong> CS:GO, 2023'te Counter-Strike 2 ile yer değiştirdi; Valve geçişi ücretsiz yükseltme olarak sundu.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-word">GAME<span>VERSE</span></span></a>
+      <div class="footer-description">
+        <p class="footer-note">Oyun dünyalarına açılan dijital galeri.</p>
+        <p class="footer-note">Bu site eğitim amaçlı hazırlanmıştır.</p>
+      </div>
+      <nav class="footer-links" aria-label="Alt gezinme">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="icerikler.html" aria-current="page">Oyunlar</a>
+        <a href="hakkinda.html">Hakkında</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
